@@ -13308,6 +13308,7 @@
 .img-hover img:hover {
     transform: scale(1.1);
 }
+ 
 
 .pull-up {
     box-shadow: -10px 10px 25px 0 rgba(0, 0, 0, 0.15);
@@ -44274,7 +44275,17 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
     transition: opacity .2s ease-out;
     opacity: 0.9;
+
+    transition: all 0.5s;
 }
+/* .img-hover img {
+    transition: all 0.5s;
+} */
+
+.swiper-slide img:hover {
+    transform: scale(1.1);
+}
+ 
 
 .card {
     position: relative;
@@ -44327,3 +44338,50 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   
 
 /* extras */
+  .swiper-button-prev {
+    background: white;
+    border-radius: 50%;
+    top: 47%;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+  
+    &::after {
+      font-size: 1.4rem;
+      content: "";
+    }
+  
+    svg {
+      width: 25px;
+    }
+  }
+  
+  .swiper-button-next {
+    background: white;
+    border-radius: 50%;
+    top: 47%;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+  
+    &::after {
+      font-size: 1.4rem;
+      content: "";
+    }
+  
+    svg {
+      width: 25px;
+    }
+  }
+  
+  .swiper-button-prev,
+  .gallery .swiper-button-next {
+    display: none;
+  
+    @media (min-width: 760px) {
+      display: flex;
+    }
+  }
+  
