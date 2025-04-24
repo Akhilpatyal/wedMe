@@ -44385,3 +44385,85 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     }
   }
   
+
+/* service swiper */
+.devservices {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+  }
+  
+  .devservices h4 {
+    color: #a0a0a0;
+  }
+  
+  .devswiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .devswipeslide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    padding: 1rem;
+    color: #eee;
+    text-align: center;
+  }
+  
+  .devitem1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("../images/gallery-img/gallery-img-2.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+  }
+  
+  .devitem2,
+  .devitem3,
+  .devitem4,
+  .devitem5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 740px) {
+    .devswipeslide {
+      width: 400px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .devswipeslide {
+      width: 300px;
+      height: 250px;
+    }
+  }
+  footer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://png.pngtree.com/thumb_back/fh260/background/20240704/pngtree-wedding-backdrop-designs-design-backgrounds-image-image_15982076.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff; /* Set text color to white so it stands out */
+  }
+  
+  footer .content {
+    position: relative;
+    z-index: 1; /* Ensures content stays above the gradient */
+    text-align: center;
+  }
+  
+  
+ 
+  
