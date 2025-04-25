@@ -44255,6 +44255,8 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 .swiper {
     width: 100%;
     height: 100%;
+    
+   
 }
 
 .swiper-slide {
@@ -44265,6 +44267,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    
 }
 
 .swiper-slide img {
@@ -44301,7 +44304,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   
   /* Initial state for h2 and animated p */
   .card h2 {
-    transform: translateY(100%);
+    transform: translateY(30%);
     /* opacity: 0; */
     transition: transform 0.6s ease, opacity 0.6s ease;
   }
@@ -44338,11 +44341,12 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   
 
 /* extras */
+
   .swiper-button-prev {
-    background: white;
+    background: #afacac96;
     border-radius: 50%;
     top: 47%;
-    left: -20px;
+    left: 0px;
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
@@ -44358,10 +44362,10 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   }
   
   .swiper-button-next {
-    background: white;
+    background: #afacac96;
     border-radius: 50%;
     top: 47%;
-    right: -30px;
+    right: 0px;
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
@@ -44374,6 +44378,11 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     svg {
       width: 25px;
     }
+  }
+  /* 2nd swiper button config */
+  .swiper-button-2{
+    top: 30%!important;
+    right: 0px;
   }
   
   .swiper-button-prev,
@@ -44416,21 +44425,45 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     color: #eee;
     text-align: center;
   }
-  
+  .devswipeslide h2{
+    color:#fff;
+  }
   .devitem1 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("../images/gallery-img/gallery-img-2.jpg");
+      url("https://cdn.pixabay.com/photo/2024/04/02/06/47/woman-8670155_640.png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+ 
+  
+
+  }
+  
+  .devitem2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("https://cdn.pixabay.com/photo/2025/02/20/09/44/indian-9419469_1280.jpg");
+      object-fit: contain;
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
   }
-  
-  .devitem2,
-  .devitem3,
-  .devitem4,
+  .devitem3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("https://www.wedabout.com/blog/wp-content/uploads/2022/12/Cream-South-Indian-wedding-saree.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+  }
+  .devitem4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("../images/gallery-img//mehandi.jpg"); 
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+  }
   .devitem5 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("https://img.freepik.com/free-photo/morskie-oko-tatry_1204-510.jpg");
+      url("https://berger-dev-s3-bucket.s3.ap-south-1.amazonaws.com/s3fs-public/inline-images/1111_11zon.jpg?VersionId=l_DAeHYCrms8UMva6_0me4Vz.uRnOE8f");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
@@ -44466,4 +44499,19 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   
   
  
-  
+  .pb-50{
+    padding-bottom: 50px;
+  }
+  .brightness{
+    filter: brightness(0.6);
+  }
+   
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* Semi-transparent overlay */
+    z-index: 1; /* Ensures overlay stays above the background */
+  }
