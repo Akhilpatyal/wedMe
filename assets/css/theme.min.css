@@ -13308,7 +13308,7 @@
 .img-hover img:hover {
     transform: scale(1.1);
 }
- 
+
 
 .pull-up {
     box-shadow: -10px 10px 25px 0 rgba(0, 0, 0, 0.15);
@@ -42443,7 +42443,7 @@ fieldset:disabled .btn {
 .navbar-transparent .navbar .dropdown .dropdown-toggle:after {
     border-top: transparent;
     color: #9ca3af;
-    content: "\f282";
+    /* content: "\f282"; */
     display: inline-block;
     font-family: bootstrap-icons !important;
     font-size: 14px;
@@ -44256,8 +44256,8 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 .swiper {
     width: 100%;
     height: 100%;
-    
-   
+
+
 }
 
 .swiper-slide {
@@ -44268,7 +44268,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    
+
 }
 
 .swiper-slide img {
@@ -44282,6 +44282,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 
     transition: all 0.5s;
 }
+
 /* .img-hover img {
     transition: all 0.5s;
 } */
@@ -44289,45 +44290,45 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 .swiper-slide img:hover {
     transform: scale(1.1);
 }
- 
 
-.card {
+
+.card-1 {
     position: relative;
     overflow: hidden;
-    align-items:center;
-  }
-  
-  .card h2,
-  .card .animated-text,
-  .card p:not(.animated-text) {
+    align-items: center;
+}
+
+.card-1 h2,
+.card-1 .animated-text,
+.card-1 p:not(.animated-text) {
     position: relative;
     z-index: 11;
-  }
-  
-  /* Initial state for h2 and animated p */
-  .card h2 {
+}
+
+/* Initial state for h2 and animated p */
+.card-1 h2 {
     transform: translateY(30%);
     /* opacity: 0; */
     transition: transform 0.6s ease, opacity 0.6s ease;
-  }
-  
-  .card .animated-text {
+}
+
+.card-1 .animated-text {
     transform: translateY(150%);
     opacity: 0;
     transition: transform 0.6s ease 0.1s, opacity 0.6s ease 0.1s;
-  }
-  
-  /* Reveal on hover */
-  .card:hover h2 {
+}
+
+/* Reveal on hover */
+.card-1:hover h2 {
     transform: translateY(0%);
     opacity: 1;
-  }
-  
-  .card:hover .animated-text {
+}
+
+.card-1:hover .animated-text {
     transform: translateY(0%);
     opacity: 1;
-  }
-  
+}
+
 
 .stretched-link:after {
     bottom: 0;
@@ -44340,11 +44341,11 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     background: #00000075;
     z-index: 8;
 }
-  
+
 
 /* extras */
 
-  .swiper-button-prev {
+.swiper-button-prev {
     background: #afacac96;
     border-radius: 50%;
     top: 47%;
@@ -44352,18 +44353,18 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
-  
+
     &::after {
-      font-size: 1.4rem;
-      content: "";
+        font-size: 1.4rem;
+        content: "";
     }
-  
+
     svg {
-      width: 25px;
+        width: 25px;
     }
-  }
-  
-  .swiper-button-next {
+}
+
+.swiper-button-next {
     background: #afacac96;
     border-radius: 50%;
     top: 47%;
@@ -44371,30 +44372,32 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     width: 50px;
     height: 50px;
     box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
-  
+
     &::after {
-      font-size: 1.4rem;
-      content: "";
+        font-size: 1.4rem;
+        content: "";
     }
-  
+
     svg {
-      width: 25px;
+        width: 25px;
     }
-  }
-  /* 2nd swiper button config */
-  .swiper-button-2{
-    top: 30%!important;
+}
+
+/* 2nd swiper button config */
+.swiper-button-2 {
+    top: 30% !important;
     right: 0px;
-  }
-  
-  .swiper-button-prev,
-  .gallery .swiper-button-next {
+}
+
+.swiper-button-prev,
+.gallery .swiper-button-next {
     /* display: none; */
-  
+
     @media (min-width: 760px) {
-      display: flex;
+        display: flex;
     }
-  }
+}
+
 @media (max-width:760px) {
     .swiper-button-next {
         background: #afacac96;
@@ -44404,7 +44407,8 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
         width: 40px;
         height: 40px;
         box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
-      }
+    }
+
     .swiper-button-prev {
         background: #afacac96;
         border-radius: 50%;
@@ -44413,27 +44417,27 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
         width: 40px;
         height: 40px;
         box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
-      }
+    }
 }
-  
+
 
 /* service swiper */
 .devservices {
     margin-top: 8rem;
     margin-bottom: 4rem;
-  }
-  
-  .devservices h4 {
+}
+
+.devservices h4 {
     color: #a0a0a0;
-  }
-  
-  .devswiper {
+}
+
+.devswiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  
-  .devswipeslide {
+}
+
+.devswipeslide {
     background-position: center;
     background-size: cover;
     width: 500px;
@@ -44446,94 +44450,194 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
     padding: 1rem;
     color: #eee;
     text-align: center;
-  }
-  .devswipeslide h2{
-    color:#fff;
-  }
-  .devitem1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("https://cdn.pixabay.com/photo/2024/04/02/06/47/woman-8670155_640.png");
-    background-size: cover;
-    background-position: center;
-    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
- 
-  
+}
 
-  }
-  
-  .devitem2 {
+.devswipeslide h2 {
+    color: #fff;
+}
+
+.devitem1 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("https://cdn.pixabay.com/photo/2025/02/20/09/44/indian-9419469_1280.jpg");
-      object-fit: contain;
+        url("https://cdn.pixabay.com/photo/2024/04/02/06/47/woman-8670155_640.png");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
-  }
-  .devitem3 {
+
+
+
+}
+
+.devitem2 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("https://www.wedabout.com/blog/wp-content/uploads/2022/12/Cream-South-Indian-wedding-saree.jpg");
+        url("https://cdn.pixabay.com/photo/2025/02/20/09/44/indian-9419469_1280.jpg");
+    object-fit: contain;
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
-  }
-  .devitem4 {
+}
+
+.devitem3 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("../images/gallery-img//mehandi.jpg"); 
+        url("https://www.wedabout.com/blog/wp-content/uploads/2022/12/Cream-South-Indian-wedding-saree.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
-  }
-  .devitem5 {
+}
+
+.devitem4 {
     background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
-      url("https://berger-dev-s3-bucket.s3.ap-south-1.amazonaws.com/s3fs-public/inline-images/1111_11zon.jpg?VersionId=l_DAeHYCrms8UMva6_0me4Vz.uRnOE8f");
+        url("../images/gallery-img//mehandi.jpg");
     background-size: cover;
     background-position: center;
     box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 740px) {
+}
+
+.devitem5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("https://images.pexels.com/photos/16632447/pexels-photo-16632447/free-photo-of-smiling-indian-bride-and-groom-in-traditional-costumes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(17, 12, 46, 0.1) 0px 48px 100px 0px;
+}
+
+/* Responsive styles */
+@media (max-width: 740px) {
     .devswipeslide {
-      width: 400px;
-      height: 300px;
+        width: 400px;
+        height: 300px;
     }
-  }
-  
-  @media (max-width: 500px) {
+}
+
+@media (max-width: 500px) {
     .devswipeslide {
-      width: 300px;
-      height: 250px;
+        width: 300px;
+        height: 250px;
     }
-  }
-  footer {
+}
+
+footer {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('https://png.pngtree.com/thumb_back/fh260/background/20240704/pngtree-wedding-backdrop-designs-design-backgrounds-image-image_15982076.jpg') center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://img.freepik.com/free-psd/classic-ballroom-award-ceremony-generative-ai_587448-2237.jpg?t=st=1745821919~exp=1745825519~hmac=27b45b37f09c1a4e57ce25089c9d94d0f167e402dd78afc809d3139059b6d3cf&w=826') center center no-repeat;
     background-size: cover;
     padding: 50px 0;
-    color: #fff; /* Set text color to white so it stands out */
-  }
-  
-  footer .content {
+    color: #fff;
+    /* Set text color to white so it stands out */
+}
+
+footer .content {
     position: relative;
-    z-index: 1; /* Ensures content stays above the gradient */
-    text-align: center;
-  }
-  
-  
- 
-  .pb-50{
+    z-index: 1;
+    /* Ensures content stays above the gradient */
+    text-align: start;
+}
+
+
+
+.pb-50 {
     padding-bottom: 50px;
-  }
-  .brightness{
+}
+
+.brightness {
     filter: brightness(0.6);
-  }
-   
-  .overlay{
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)); /* Semi-transparent overlay */
-    z-index: 1; /* Ensures overlay stays above the background */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    /* Semi-transparent overlay */
+    z-index: 1;
+    /* Ensures overlay stays above the background */
+}
+
+
+/*  */
+/* HeroSection */
+.HeroSection {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+      ),
+      url("https://images.pexels.com/photos/5759215/pexels-photo-5759215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      no-repeat center center/cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
   }
+  
+  /* Slider inside Hero */
+  .hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 0;
+  }
+  
+  .hero-slider .slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    animation: slideAnimation 15s infinite;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+  }
+  
+  .hero-slider .slide-1 {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+      ),url("https://images.pexels.com/photos/12163288/pexels-photo-12163288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+  
+  .hero-slider .slide-2 {
+    background-image:linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+      ), url("https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481464.jpg?t=st=1745820214~exp=1745823814~hmac=9a21399aac704515a0088182b71c3b2a2827cd0130f7a2aa0a7b96487bc81bdb&w=996");
+  }
+  
+  .hero-slider .slide-3 {
+    background-image:linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0)
+      ), url("https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481476.jpg?t=st=1745820177~exp=1745823777~hmac=666013cb61f51284c565be22172effaa1e5133ddee27bc6ccec7e81275ccf27c&w=996");
+  }
+  
+  /* Keyframes for slider */
+  @keyframes slideAnimation {
+    0%, 100% { opacity: 1; }
+    33.33% { opacity: 0; }
+    66.66% { opacity: 0; }
+  }
+  
+  .hero-slider .slide-1 {
+    animation-delay: 4s;
+  }
+  .hero-slider .slide-2 {
+    animation-delay: 6s;
+  }
+  
+  .hero-slider .slide-3 {
+    animation-delay: 9;
+  }
+  
+.cta{
+    /* background:linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ), url(https://cdn.pixabay.com/photo/2020/08/09/16/06/ring-5475926_1280.jpg)no-repeat; background-size: cover; background-position: center center; */
+}
