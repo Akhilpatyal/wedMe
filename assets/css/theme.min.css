@@ -44294,6 +44294,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
 .card {
     position: relative;
     overflow: hidden;
+    align-items:center;
   }
   
   .card h2,
