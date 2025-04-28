@@ -44395,6 +44395,26 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
       display: flex;
     }
   }
+@media (max-width:760px) {
+    .swiper-button-next {
+        background: #afacac96;
+        border-radius: 50%;
+        top: 47%;
+        right: 0px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+      }
+    .swiper-button-prev {
+        background: #afacac96;
+        border-radius: 50%;
+        top: 47%;
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
+      }
+}
   
 
 /* service swiper */
