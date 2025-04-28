@@ -42556,6 +42556,7 @@ fieldset:disabled .btn {
 
 .navbar-transparent.navbar-fixed .navbar .dropdown .dropdown-toggle:after {
     color: #6b7280;
+    display: none;
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
@@ -44387,7 +44388,7 @@ div.code-toolbar>.toolbar>.toolbar-item>span:hover {
   
   .swiper-button-prev,
   .gallery .swiper-button-next {
-    display: none;
+    /* display: none; */
   
     @media (min-width: 760px) {
       display: flex;
