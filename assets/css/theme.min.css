@@ -45195,9 +45195,7 @@ footer .content {
 /*-------------------------------
    Project  Section  CSS
 -------------------------------*/
-.project-wrap{
-  background:black!important;
-}
+ 
 .project-card {
   position: relative;
   background: white;
