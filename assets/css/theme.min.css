@@ -45296,7 +45296,7 @@ footer .content {
 }
 .partner-item img {
   max-width: 70px;
-  filter: brightness(0.1) invert(0);
+  filter: brightness(0.1) invert(1);
   transition: 0.4s;
 }
 .partner-item:hover img {
