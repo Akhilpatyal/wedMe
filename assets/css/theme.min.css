@@ -44491,7 +44491,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   background: #afacac96;
   border-radius: 50%;
   top: 47%;
-  left: 0px;
+  left: -54px;
   width: 50px;
   height: 50px;
   box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
@@ -44510,7 +44510,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
   background: #afacac96;
   border-radius: 50%;
   top: 47%;
-  right: 0px;
+  left: 0px;
   width: 50px;
   height: 50px;
   box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
@@ -44555,7 +44555,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:hover {
     background: #afacac96;
     border-radius: 50%;
     top: 47%;
-    left: 0px;
+    left: -40px;
     width: 40px;
     height: 40px;
     box-shadow: 0px 2px 11px rgb(0 0 0 / 17%);
@@ -44698,87 +44698,71 @@ footer .content {
 /*  */
 /* HeroSection */
 .HeroSection {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
-    url("https://images.pexels.com/photos/5759215/pexels-photo-5759215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
-      no-repeat center center/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../images/banner/bann1.png') no-repeat center center/cover;
   background-size: cover;
   background-position: center center;
   position: relative;
   overflow: hidden;
 }
 
-/* Slider inside Hero */
+/* Slider container */
 .hero-slider {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;
   z-index: 0;
 }
 
+/* Base slide style */
 .hero-slider .slide {
-  min-width: 100%;
+  position: absolute;
+  width: 100%;
   height: 100%;
+  opacity: 0;
   background-size: cover;
   background-position: center center;
-  animation: slideAnimation 15s infinite;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  position: absolute;
+  animation: fade 12s infinite ease-in-out;
 }
 
+/* Individual slide background images and staggered delays */
 .hero-slider .slide-1 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-    ),
-    url("https://images.pexels.com/photos/12163288/pexels-photo-12163288.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../images/banner/bann1.png');
+  animation-delay: 0s;
 }
 
 .hero-slider .slide-2 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-    ),
-    url("https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481464.jpg?t=st=1745820214~exp=1745823814~hmac=9a21399aac704515a0088182b71c3b2a2827cd0130f7a2aa0a7b96487bc81bdb&w=996");
-}
-
-.hero-slider .slide-3 {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-    ),
-    url("https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481476.jpg?t=st=1745820177~exp=1745823777~hmac=666013cb61f51284c565be22172effaa1e5133ddee27bc6ccec7e81275ccf27c&w=996");
-}
-
-/* Keyframes for slider */
-@keyframes slideAnimation {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  33.33% {
-    opacity: 0;
-  }
-  66.66% {
-    opacity: 0;
-  }
-}
-
-.hero-slider .slide-1 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../images/banner/bann2.png');
   animation-delay: 4s;
 }
-.hero-slider .slide-2 {
-  animation-delay: 6s;
-}
 
 .hero-slider .slide-3 {
-  animation-delay: 9;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url('../images/banner/bann3.png');
+  animation-delay: 8s;
+}
+
+/* Keyframes for smooth fade effect */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* cursor */
@@ -45517,54 +45501,7 @@ footer .content {
   padding-top: 100px;
 }
 
-/* 
-.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: #fff;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 0px 0px 12px rgba(17, 17, 17, 0.04);
-  transition: all 0.4s ease-in-out;
-}
-.owl-carousel .owl-nav button.owl-prev i, .owl-carousel .owl-nav button.owl-next i {
-  font-size: 16px;
-  line-height: 0.8;
-  display: inline-block;
-  position: relative;
-  top: 0px;
-  color: #051145;
-  margin: 0 auto;
-  transition: all 0.4s ease-in-out;
-}
-.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover {
-  border-color: transparent;
-  background-color: #1B7261;
-}
-.owl-carousel .owl-nav button.owl-prev:hover i, .owl-carousel .owl-nav button.owl-next:hover i {
-  color: #fff;
-}
-.owl-carousel .owl-dots button.owl-dot {
-  display: inline-block;
-  margin: 0 6px;
-  position: relative;
-  bottom: -5px;
-}
-.owl-carousel .owl-dots button.owl-dot span {
-  display: inline-block;
-  width: 18px;
-  height: 7px;
-  background: rgba(27, 114, 97, 0.3);
-  position: relative;
-  transition: all 0.4s ease-in-out;
-}
-.owl-carousel .owl-dots button.owl-dot.active span {
-  width: 30px;
-  background: #1B7261;
-} */
+ 
 
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next {
