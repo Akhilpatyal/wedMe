@@ -46482,19 +46482,7 @@ figure img {
   transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
 
-.card__button {
-  /* padding: 0.55em 1.2em;
-  width: fit-content;
-  width: -moz-fit-content; 
-  font-variant: small-caps;
-  font-weight: bold;
-  border-radius: 0.45em;
-  border: none;
-  background-color:orangered;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem;
-  color: hsl(0, 0%, 0%); */
-}
+  
 
 .card__button:focus {
   outline: 2px solid black;
@@ -46642,4 +46630,32 @@ figure img {
 .flex{
   display: flex;
   justify-content: center;
+}
+/* button */
+
+.slide-bg {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  z-index: 1;
+}
+
+.slide-bg::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(198 215 219);
+  z-index: -1;
+  transition: top 0.3s ease;
+}
+
+.slide-bg:hover::before {
+  top: 0;
+}
+
+.slide-bg:hover {
+  color: black;
 }
