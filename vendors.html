@@ -39,68 +39,80 @@
     <div class="cursor-outline"></div>
     <!-- navbar -->
     <!-- navbar -->
-    <div class="navbar-transparent navbar-position">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-expand-lg">
-                        <a class="navbar-brand" href="index.html">
+     <div class="navbar-transparent navbar-position">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index-2.html">
 
-                            <span style="color: red;">Ban</span>Quet
+                <span style="color: red;">Ban</span>Quet
 
-                        </a>
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto ms-auto">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarHome" role="button"
-                                        aria-expanded="false">
-                                        Home
-                                    </a>
+              </a>
+              <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-auto">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarHome" >
+                      Home
+                    </a>
 
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="venues.html" id="navbarListing"
-                                        role="button"  >
-                                        Venues
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="vendors.html" id="navbarListing"   >
-                                        Vendor
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown"
-                                        role="button">
-                                        Blog
-                                    </a>
-                                </li>
-                                
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="about.html" aria-expanded="false">
-                                        About us
-                                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="venues.html" id="navbarListing">
+                      Venues
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="vendors.html" id="navbarListing">
+                      Vendor
+                    </a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button">
+                      Blog
+                    </a>
+                  </li>
 
-                                </li>
-                            </ul>
-                            <div class="p-3 p-lg-0">
 
-                                <a href="pages/signin.html" class="btn btn-secondary shadow-sm">Sign in</a>
-                                <a href="#" class="btn btn-primary shadow-sm">Get Started Now</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" aria-expanded="false">
+                      About us
+                    </a>
 
-                            </div>
-                        </div>
-                    </nav>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="realWedding.html" aria-expanded="false">
+                      Real Wedding
+                    </a>
+
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="contact.html" aria-expanded="false">
+                      Contact
+                    </a>
+
+                  </li>
+                </ul>
+                <div class="p-3 p-lg-0">
+
+                  <a href="pages/signin.html" class="btn btn-secondary shadow-sm">Sign in</a>
+                  <a href="#" class="btn btn-primary shadow-sm">Get Started Now</a>
+
+
+
                 </div>
-            </div>
+              </div>
+            </nav>
+          </div>
         </div>
+      </div>
     </div>
     <!-- hero start -->
     <main>
@@ -112,7 +124,7 @@
                     <!-- hero captions -->
                     <div class="col-lg-9 col-md-12">
                         <div class="text-white text-center">
-                            <h1 class="display-3 fw-bold text-white parata-f" >Find Wedding Vendors</h1>
+                            <h1 class="display-3 fw-bold text-white parata-f" id="heading" >Find Wedding Vendors</h1>
                             <p class="lead mb-0">Browse the best wedding vendors in your area — from venues and
                                 photographers, to wedding planners, caterers, florists and more.</p>
                         </div>
@@ -1567,7 +1579,16 @@
         </div>
     </div>
     </div>
-    <!-- scripts -->
+    <!-- Gsap scripts -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/gSap.js"></script>
+
+
     <!-- Libs JS -->
     <!-- Owl Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

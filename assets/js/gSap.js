@@ -18,8 +18,8 @@ gsap.set(".char", { opacity: 0, y: 20 });
 gsap.to(".char", {
   opacity: 1,
   y: 0,
-  stagger: 0.05,
-  duration: 1,
+  stagger: 0.08,
+  duration: 4,
   ease: "power2.out",
   scrollTrigger: {
     trigger: "#heading",
