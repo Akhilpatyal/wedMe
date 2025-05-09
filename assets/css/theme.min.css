@@ -46692,8 +46692,11 @@ figure img {
 .outfit-f {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
-
 }
+.maths-f{
+  font-family: maths;
+}
+
 
 .p-30 {
   padding: 30px;
@@ -46717,6 +46720,9 @@ figure img {
 }
 
 @media(max-width:790px) {
+  .display-5{
+    font-size: 20px;
+  }
   .blogText {
     text-align: center;
     margin-top: 10px;
@@ -46730,5 +46736,9 @@ figure img {
 }
 }
 
-/* Excards */
-
+/* Extras Page */
+ .swiper-location-tabs a {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
