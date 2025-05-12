@@ -47976,3 +47976,57 @@ Appointment Section  CSS
   font-size: 18px;
   color: var(--ambed-white, #ffffff);
 }
+/* animation */
+.leading__right {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 25%, rgba(0, 0, 0, 1) 75%, transparent 100%);
+  
+}
+
+.leading__points li {
+  
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* soft border for depth */
+  margin: 5px 0; /* space between items */
+  color: #fff; /* optional: make text stand out */
+}
+
+
+.leading__points {
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 10s linear infinite;
+}
+.leading__right::before {
+content: "";
+  height: 100px;
+  width: 100px;
+  background: radial-gradient(circle, rgba(255,165,0,0.7) 0%, transparent 60%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  filter: blur(40px);
+  z-index: 0; /* Ensure it's behind content */
+}
+
+.leading__points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 2rem;
+  background: #59595945;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
